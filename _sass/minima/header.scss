@@ -1,0 +1,165 @@
+
+// SKIP LINKS -------------------------
+
+.skip-links {
+  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+.skip-links li a {
+	background-color: #fff;
+	display: block;
+	position: absolute;
+	left: -600000px;
+	padding: 0.5em;
+}
+
+.skip-links li a:focus {
+	left: 0;
+  margin: 20px;
+}
+
+// SITE HEADER ------------------------
+
+
+.site-header {
+  padding: 70px 0 5px 0;
+  // Positioning for the mobile navigation icon
+  position: relative;
+}
+
+h1 {
+  border: 3px solid $font-color;
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: $heading-font;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 12px 24px;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  float: right;
+  line-height: 56px;
+
+  .menu-icon {
+    display: none;
+  }
+
+  li{
+    list-style-type: none;
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+
+    a {
+      color: $text-color;
+      font-family: $heading-font;
+      font-size: .875rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+    }
+  }
+}
+
+.social-media-nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+
+  li {
+    list-style-type: none;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  a {
+    color: $text-color;
+    text-decoration: none;
+  }
+}
+
+
+// MIN-WIDTH 960px
+@media (min-width: $mq-large) {
+
+  .header-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+  .site-nav {
+    float: none;
+    line-height: normal;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+
+
+    ul {
+      display: flex;
+      flex-direction: row;
+    }
+
+
+  }
+
+
+}
+
+//   @media (min-width: $mq-medium) {
+//     position: absolute;
+//     top: 9px;
+//     right: $spacing-unit / 2;
+//     background-color: $background-color;
+//     border: 1px solid $grey-color-light;
+//     border-radius: 5px;
+//     text-align: right;
+//
+//     .menu-icon {
+//       display: block;
+//       float: right;
+//       width: 36px;
+//       height: 26px;
+//       line-height: 0;
+//       padding-top: 10px;
+//       text-align: center;
+//
+//       > svg path {
+//         fill: $grey-color-dark;
+//       }
+//     }
+//
+//     .trigger {
+//       clear: both;
+//       display: none;
+//     }
+//
+//     &:hover .trigger {
+//       display: block;
+//       padding-bottom: 5px;
+//     }
+//
+//     .page-link {
+//       display: block;
+//       padding: 5px 10px;
+//
+//       &:not(:last-child) {
+//         margin-right: 0;
+//       }
+//       margin-left: 20px;
+//     }
+//   }
+// }
+//

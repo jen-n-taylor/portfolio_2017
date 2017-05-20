@@ -1,7 +1,6 @@
 
 /* ---- GLOBAL STYLES ---- */
 
-
 /* ---- BOX SIZING ----*/
 
 *,
@@ -14,7 +13,7 @@
 
 /* ------- GLOBAL VARIABLES --------*/
 
-/* ------- COLOR */
+/* COLOR */
 $main: #19CCAA;
 $light: #E7EDF4;
 $header:  #1D1425;
@@ -23,28 +22,47 @@ $font-color: #262626;
 $link-color: #425469;
 $link-hover-color: $main;
 
-/* ------- FONTS */
-$font-style: 'Open Sans', sans-serif;
-$heading-font: 'Muli', sans-serif;
+/* FONTS */
 
-/* ------- WIDTH */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700');
+
+$font-style:'Source Sans Pro', sans-serif;
+
+$heading-font: 'Montserrat', sans-serif;
+
+
+/* MEDIA QUERIES */
+$mq-small: 320px;
+$mq-medium: 768px;
+$mq-large: 960px;
+$mq-xlarge: 1024px;
+
+/*  WIDTH */
 $content-width: 800px;
 
 
+html {
+	font-size: 100%;
+}
 
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
 
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
+ul, ol, dl, figure {
   margin-bottom: $spacing-unit / 2;
 }
 
 /* Images */
 img {
-  max-width: 100%;
+
   vertical-align: middle;
 }
 

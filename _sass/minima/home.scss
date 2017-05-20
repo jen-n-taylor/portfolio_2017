@@ -1,0 +1,61 @@
+.main {
+  padding: 70px 0;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+}
+
+img.jen-hike {
+  height: 580px;
+}
+
+img.portfolio-img {
+  width: 230px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 160px;
+}
+
+.main-text {
+  position: relative;
+  margin: 70px 0 0 55px;
+
+  h2 {
+    color: $font-color;
+    font-family: $heading-font;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+
+  h2:before, h2:after {
+    content: "";
+    position: absolute;
+    background-color: $font-color;
+    height: 4px;
+    width: 60px;
+  }
+
+  h2:before {
+    top: 0;
+    left: 0;
+  }
+
+  h2:after {
+    top: 170px;
+    left: 0;
+  }
+
+  p {
+    color: $font-color;
+    font-family: $heading-font;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+  }
+
+}
